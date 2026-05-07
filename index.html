@@ -80,9 +80,351 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            
-        </section>
+        <!-- BANNER -->
+
+<section class="banner">
+    <div class="banner-content">
+        <h1>FIFA World Cup</h1>
+        <p>
+            Viva a emoção da maior competição de futebol do planeta.
+            História, seleções lendárias, craques inesquecíveis e momentos eternos.
+        </p>
+
+        <button>Explorar</button>
+    </div>
+</section>
+
+<!-- TOPICOS -->
+
+<h2 class="title">Tópicos da Copa</h2>
+
+<section class="topicos">
+
+    <div class="topico">
+        <h3>🏆 Campeões</h3>
+        <p>
+            Conheça as seleções que marcaram história e conquistaram o troféu mais desejado do futebol.
+        </p>
+    </div>
+
+    <div class="topico">
+        <h3>⚽ Artilheiros</h3>
+        <p>
+            Veja os jogadores que fizeram gols históricos e se tornaram lendas da Copa do Mundo.
+        </p>
+    </div>
+
+    <div class="topico">
+        <h3>🌍 Países</h3>
+        <p>
+            Explore os países-sede e as culturas que transformaram cada edição em um espetáculo.
+        </p>
+    </div>
+
+    <div class="topico">
+        <h3>🎉 Torcidas</h3>
+        <p>
+            A energia das arquibancadas e das ruas faz da Copa um evento único no mundo.
+        </p>
+    </div>
+
+</section>
+
+<!-- CARDS -->
+
+<h2 class="title">Momentos Históricos</h2>
+
+<section class="cards">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+            <h3>Brasil Pentacampeão</h3>
+
+            <p>
+                Em 2002, o Brasil conquistou seu quinto título mundial com grandes atuações de Ronaldo Fenômeno.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+            <h3>Final Épica</h3>
+
+            <p>
+                Decisões emocionantes marcaram gerações e fizeram a história da Copa do Mundo.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1547347298-4074fc3086f0?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+            <h3>Torcida Mundial</h3>
+
+            <p>
+                Milhões de torcedores se unem para celebrar o futebol em uma festa global inesquecível.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- CARROSSEL -->
+
+<h2 class="title">Galeria da Copa</h2>
+
+<section class="carrossel">
+
+    <div class="slides">
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1600&auto=format&fit=crop">
+
+            <div class="slide-text">
+                <h2>Estádios Icônicos</h2>
+                <p>Os maiores palcos do futebol mundial.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1600&auto=format&fit=crop">
+
+            <div class="slide-text">
+                <h2>Grandes Jogadores</h2>
+                <p>Lendas eternizadas na história da Copa.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c643e7485?q=80&w=1600&auto=format&fit=crop">
+
+            <div class="slide-text">
+                <h2>Paixão Mundial</h2>
+                <p>A emoção que une países e culturas.</p>
+            </div>
+        </div>
+
+    </div>
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+        
+        body{
+            background:#0a1f44;
+            color:white;
+        }
+        
+        /* BANNER */
+        
+        .banner{
+            height:80vh;
+            background:
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+            url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1600&auto=format&fit=crop');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+        
+        .banner-content h1{
+            font-size:4rem;
+            margin-bottom:20px;
+            text-transform:uppercase;
+        }
+        
+        .banner-content p{
+            font-size:1.2rem;
+            max-width:700px;
+            margin:auto;
+        }
+        
+        .banner-content button{
+            margin-top:25px;
+            padding:15px 35px;
+            border:none;
+            border-radius:40px;
+            background:#ffcc00;
+            color:#000;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.4s;
+        }
+        
+        .banner-content button:hover{
+            transform:scale(1.1);
+        }
+        
+        /* TÍTULOS */
+        
+        .title{
+            text-align:center;
+            margin:70px 0 40px;
+            font-size:2.5rem;
+            color:#ffcc00;
+        }
+        
+        /* TOPICOS */
+        
+        .topicos{
+            display:flex;
+            justify-content:center;
+            gap:25px;
+            flex-wrap:wrap;
+            padding:0 50px;
+        }
+        
+        .topico{
+            background:#102b5c;
+            padding:30px;
+            width:260px;
+            border-radius:20px;
+            text-align:center;
+            transition:0.4s;
+            box-shadow:0 10px 20px rgba(0,0,0,0.3);
+        }
+        
+        .topico:hover{
+            transform:translateY(-10px);
+        }
+        
+        .topico h3{
+            margin:15px 0;
+            color:#ffcc00;
+        }
+        
+        .topico p{
+            font-size:0.95rem;
+            line-height:1.5;
+        }
+        
+        /* CARDS */
+        
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:30px;
+            padding:0 60px 70px;
+        }
+        
+        .card{
+            background:#102b5c;
+            border-radius:20px;
+            overflow:hidden;
+            transition:0.4s;
+            box-shadow:0 10px 20px rgba(0,0,0,0.3);
+        }
+        
+        .card:hover{
+            transform:scale(1.03);
+        }
+        
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+        
+        .card-content{
+            padding:20px;
+        }
+        
+        .card-content h3{
+            color:#ffcc00;
+            margin-bottom:10px;
+        }
+        
+        .card-content p{
+            line-height:1.6;
+        }
+        
+        /* CARROSSEL */
+        
+        .carrossel{
+            width:90%;
+            margin:50px auto;
+            overflow:hidden;
+            border-radius:20px;
+            box-shadow:0 10px 20px rgba(0,0,0,0.4);
+        }
+        
+        .slides{
+            display:flex;
+            width:300%;
+            animation:slide 12s infinite;
+        }
+        
+        .slide{
+            width:100%;
+            position:relative;
+        }
+        
+        .slide img{
+            width:100%;
+            height:500px;
+            object-fit:cover;
+        }
+        
+        .slide-text{
+            position:absolute;
+            bottom:40px;
+            left:40px;
+            background:rgba(0,0,0,0.6);
+            padding:20px;
+            border-radius:15px;
+        }
+        
+        .slide-text h2{
+            color:#ffcc00;
+            margin-bottom:10px;
+        }
+        
+        @keyframes slide{
+            0%{transform:translateX(0);}
+            30%{transform:translateX(0);}
+        
+            35%{transform:translateX(-100%);}
+            65%{transform:translateX(-100%);}
+        
+            70%{transform:translateX(-200%);}
+            100%{transform:translateX(-200%);}
+        }
+        
+        /* RESPONSIVO */
+        
+        @media(max-width:768px){
+        
+        .banner-content h1{
+            font-size:2.5rem;
+        }
+        
+        .slide img{
+            height:300px;
+        }
+        
+        .slide-text{
+            left:15px;
+            right:15px;
+            bottom:20px;
+        }
+        
+        }
+        
+        </style>
+</section>
 
         <footer>
             <p>Liliane Freitas</p>
